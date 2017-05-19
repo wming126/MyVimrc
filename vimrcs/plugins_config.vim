@@ -177,23 +177,9 @@ nmap <F2> :TagbarToggle<CR>
 autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()  "如果是c语言的程序的话，tagbar自动开启
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" =>  Vim Markdown
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_toc_autofit = 1
 

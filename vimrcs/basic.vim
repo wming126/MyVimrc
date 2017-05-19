@@ -23,6 +23,7 @@
 "       http://amix.dk/vim/vimrc.txt
 "
 " Sections:
+"    -> Vundle
 "    -> General
 "    -> VIM user interface
 "    -> Colors and Fonts
@@ -38,6 +39,29 @@
 "    -> Helper functions
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vundle Put this at the top of your .vimrc to use Vundle. 
+"    Remove plugins you don't need, they are for illustration 
+"    purposes.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim_runtime/vundle/Vundle.vim
+
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+" Plugin 'VundleVim/Vundle.vim'
+
+" using YCM for code-completion
+Plugin 'Valloric/YouCompleteMe'
+
+
+call vundle#end()            " required
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -172,7 +196,9 @@ if has("gui_running")
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf8
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
