@@ -85,6 +85,7 @@ I recommend reading the docs of these plugins to understand them better. Each pl
 * [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): Maintains a history of previous yanks, changes and deletes
 Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room [Read more here](http://amix.dk/blog/post/19744)
 
+todo list add myself add plugin
 
 ## Included color schemes
 
